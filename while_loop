@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class while_loop {
+    public static void main(String[] args) {
+
+        // Use the scanner module to accept user input.
+        Scanner user_input = new Scanner(System.in);
+
+        // initialize variables.
+        int user_choice = 0;
+        String option1 = "1. Bacon Cheeseburger";
+        String option2 = "2. Chicken Sandwich";
+        String option3 = "3. Buffalo Chicken";
+        String option4 = "4. Fish Sandwich";
+        String option5 = "5. Fish and Chips";
+        String option6 = "9. Exit";
+
+        // Fire an infinite loop that will compare the user's input to each
+        // menu option.
+        while(0 == 0){
+          // Display the menu options at the start of each iteration.
+          System.out.println("Please select a menu item:");
+          System.out.println(option1);
+          System.out.println(option2);
+          System.out.println(option3);
+          System.out.println(option4);
+          System.out.println(option5);
+          System.out.println(option6);
+
+          // Retrieve user input.
+          user_choice = user_input.nextInt();
+
+            // if the user chooses a valid option, display a message showing
+            // option has been chosen.
+          if(user_choice == 1) {
+              System.out.println("You have chosen " + option1);
+          }
+          else if(user_choice == 2) {
+              System.out.println("You have chosen " + option2);
+          }
+          else if(user_choice == 3) {
+              System.out.println("You have chosen " + option3);
+          }
+          else if(user_choice == 4) {
+              System.out.println("You have chosen " + option4);
+          }
+          else if(user_choice == 5) {
+              System.out.println("You have chosen " + option5);
+          }
+          // If the user chooses 9, exit the menu selection.
+          else if(user_choice == 9) {
+              break;
+          }
+
+          // Anything outside of the given options will be considered an
+          // invalid option.
+          else {
+              System.out.println("Please select an option from the menu.");
+          }
+        }
+
+    }
+}
