@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class tempurature_control {
+    public static void main(String[] args) {
+        // Because a loop is not being used in this particular program, simply
+        // retrieve the user's temperature input before comparing it to the
+        // existing temperature categories.
+
+        Scanner user_input = new Scanner(System.in);
+        // Initialize the user's temperature to be "empty".
+        double user_temp= 0;
+        // Prompt the user for their temperature.
+        System.out.println("Enter your temperature:");
+
+        // Set user_temp to a type: double, so it may accept a decimal value.
+        user_temp = user_input.nextDouble();
+
+        // If the user's temperature is less than 97.5, display that it is
+        // a low temperature.
+        if(user_temp < 97.5){
+            System.out.println("Your temperature is low.");
+        }
+
+        // If the temperature is higher than 97.5 AND lower than 99.5, display
+        // a normal temperature.
+        else if(97.5 <= user_temp & user_temp <= 99.5){
+            System.out.println("Your temperature is normal.");
+        }
+
+        // Under any other conditions, the temperature is high.
+        else{
+            System.out.println("Your temperature is high.");
+        }
+    }
+}
