@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class switch_statement {
+    public static void main(String[] args) {
+
+        // Init a variable that will hold the user's input.
+        int user_selection = 0;
+
+        // Init a variable to hold the translation string.
+        String translation = "";
+
+        // Use the scanner module to accept user input.
+        Scanner user_input = new Scanner(System.in);
+
+        // Start a verification loop.
+        while(0 == 0){
+            // Get user's integer input 1-10
+            System.out.println("Please enter a whole number 1-10; ");
+            user_selection = user_input.nextInt();
+
+            // If the user's selection is between 1 and 10, inclusive, break
+            // out of the loop.
+            if(user_selection >= 1 & 10 >= user_selection){
+                break;
+            }
+            else{
+                System.out.println("That was an invalid entry.");
+            }
+
+        }
+        switch (user_selection){
+            case 1: translation = "Eins";
+            break;
+
+            case 2: translation = "Zwei";
+            break;
+
+            case 3: translation = "Drei";
+            break;
+
+            case 4: translation = "Vier";
+            break;
+
+            case 5: translation = "Funf";
+            break;
+
+            case 6: translation = "Sechs";
+            break;
+
+            case 7: translation = "Sieben";
+            break;
+
+            case 8: translation = "Acht";
+            break;
+
+            case 9: translation = "Neun";
+            break;
+
+            case 10: translation = "Zehn";
+            break;
+        }
+        // Print the translation.
+        System.out.println(user_selection + " translated to German is: " + translation);
+    }
+}
