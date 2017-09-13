@@ -1,0 +1,26 @@
+public class variables {
+    public static void main(String[] args) {
+        // Assign an appropriate value to each primitive data type.
+        byte byteDisplay = -7;
+        short shortDisplay = 20500;
+        int intDisplay = 1234567;
+        long longDisplay = 870000000;
+        float floatDisplay = 8.6f;
+        double doubleDisplay = 98.6;
+        boolean booleanDisplay = 1+1 == 3;
+        Character characterDisplay = 'a';
+
+        // Print each variable, coupled with a small description of what each
+        // line is displaying.
+        System.out.println("Byte Display: " + byteDisplay);
+        System.out.println("Short Display: " + shortDisplay);
+        System.out.println("Integer Display: " + intDisplay);
+        System.out.println("Long Display: " + longDisplay);
+        System.out.println("Float Display: " + floatDisplay);
+        System.out.println("Double Display: " + doubleDisplay);
+        System.out.println("Boolean Display (1+1 = 3): " + booleanDisplay);
+        System.out.println("Character Display: " + characterDisplay);
+
+
+    }
+}
